@@ -1,0 +1,23 @@
+.main_wrapper {
+    width: 100vw;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.dynamic {
+    margin-top: 160px;
+}
+
+@media screen and (max-width: 1920px) {
+    .dynamic {
+        margin-top: 8.3vw;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .dynamic {
+        margin-top: 28.5vw;
+    }
+}

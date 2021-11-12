@@ -1,0 +1,399 @@
+.filters {
+    position: flex;
+    flex-direction: column;
+    position: relative;
+    width: 340px;
+    margin: 25px;
+}
+
+.filters>div {
+    position: relative;
+    padding: 25px 40px 25px 60px;
+    border-bottom: 3px solid #e9e9e9;
+    display: flex;
+    flex-direction: column;
+}
+
+.filters>div:last-child {
+    border: none;
+}
+
+.filters h5 {
+    margin-bottom: 25px;
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+}
+
+.filters>div:first-child h5 {
+    margin-bottom: 0;
+    color: #7015ff;
+}
+
+.filters h5 img {
+    width: 20px;
+    margin-right: 10px;
+}
+
+.filters>div:last-child h5 img {
+    width: 15px;
+    margin-right: 15px;
+}
+
+.category div, .orientation div, .price div {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.category label, .orientation label, .price label {
+    font-size: 14px;
+    padding-left: 20px;
+    position: relative;
+    cursor: pointer;
+}
+
+.category input, .orientation input, .price input {
+    display: none;
+}
+
+.category label:not([for="all"])::after, .orientation label:not([for="all"])::after, .price label::after {
+    content: '';
+    width: 15px;
+    height: 15px;
+    border-radius: 2px;
+    border: 1px solid #c1c1c1;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.category label:not([for="all"])::before, .orientation label:not([for="all"])::before, .price label::before {
+    content: '';
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    left: 3px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.orientation label:not([for="all"])::before {
+    border: 1px solid #000;
+    box-sizing: border-box;
+}
+
+.category input:checked+label:not([for="all"])::before, .orientation input:checked+label:not([for="all"])::before, .price input:checked+label::before {
+    background: #7015ff;
+}
+
+.orientation input:checked+label:not([for="all"])::before {
+    border: 1px solid #7015ff;
+}
+
+.category label[for="all"], .orientation label[for="all"] {
+    font-size: 18px;
+}
+
+.category label[for="all"]::before, .orientation label[for="all"]::before {
+    content: '';
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    left: 3px;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 50%;
+}
+
+.category label[for="all"]::after, .orientation label[for="all"]::after {
+    content: '';
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    border: 1px solid #c1c1c1;
+}
+
+.category input:checked+label[for="all"]::before, .orientation input:checked+label[for="all"]::before {
+    background: #7015ff;
+}
+
+.dispay div {
+    display: flex;
+    align-items: center;
+}
+
+.dispay div button {
+    margin-right: 10px;
+    background: none;
+    border: none;
+}
+
+.dispay div button img {
+    width: 30px;
+}
+
+.date select {
+    font-size: 14px;
+    border: 2px solid #c1c1c1;
+    padding: 10px;
+    outline: none;
+    border-radius: 5px;
+}
+
+.orientation div:nth-child(3) label:before {
+    height: 8px;
+}
+
+.orientation div:nth-child(4) label:before {
+    width: 8px;
+    left: 4.9px;
+}
+
+.colors div {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.colors div button {
+    width: 22px;
+    height: 22px;
+    background: red;
+    border-radius: 50%;
+    position: relative;
+    border: none;
+    margin: 0 9px 8px 0;
+}
+
+.colors div button:nth-child(1) {
+    background: none;
+    border: 1px solid #c0c0c0;
+}
+
+.colors div button:nth-child(1)::before {
+    content: '\00d7';
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 18px;
+    color: #c0c0c0;
+}
+
+.colors div button:nth-child(3) {
+    background: #00C2FF;
+}
+
+.colors div button:nth-child(4) {
+    background: #0AE488;
+}
+
+.colors div button:nth-child(5) {
+    background: #F6FB14;
+}
+
+.colors div button:nth-child(6) {
+    background: #B61AFF;
+}
+
+.colors div button:nth-child(7) {
+    background: #0904FF;
+}
+
+.colors div button:nth-child(8) {
+    background: #000;
+}
+
+.colors div button:nth-child(9) {
+    background: #FF00B8;
+}
+
+.colors div button:nth-child(10) {
+    background: #B6C5C2;
+}
+
+.colors div button:nth-child(11) {
+    background: #78EC42;
+}
+
+.colors div button:nth-child(12) {
+    background: none;
+    border: 1px solid #c0c0c0;
+}
+
+@media screen and (max-width: 1920px) {
+    .filters {
+        width: 17.71vw;
+        margin: 1.30vw;
+    }
+    .filters>div {
+        padding: 1.30vw 2.08vw 1.30vw 3.13vw;
+        border-bottom: 0.16vw solid #e9e9e9;
+    }
+    .filters h5 {
+        margin-bottom: 1.30vw;
+        font-size: 0.94vw;
+    }
+    .filters h5 img {
+        width: 1.04vw;
+        margin-right: 0.52vw;
+    }
+    .filters>div:last-child h5 img {
+        width: 0.78vw;
+        margin-right: 0.78vw;
+    }
+    .category div, .orientation div, .price div {
+        margin-bottom: 0.52vw;
+    }
+    .category label, .orientation label, .price label {
+        font-size: 0.73vw;
+        padding-left: 1.04vw;
+    }
+    .category label:not([for="all"])::after, .orientation label:not([for="all"])::after, .price label::after {
+        width: 0.78vw;
+        height: 0.78vw;
+        border-radius: 0.10vw;
+        border: 0.05vw solid #c1c1c1;
+    }
+    .category label:not([for="all"])::before, .orientation label:not([for="all"])::before, .price label::before {
+        width: 0.63vw;
+        height: 0.63vw;
+        left: 0.16vw;
+    }
+    .orientation label:not([for="all"])::before {
+        border: 0.05vw solid #000;
+    }
+    .orientation input:checked+label:not([for="all"])::before {
+        border: 0.05vw solid #7015ff;
+    }
+    .category label[for="all"], .orientation label[for="all"] {
+        font-size: 0.94vw;
+    }
+    .category label[for="all"]::before, .orientation label[for="all"]::before {
+        width: 0.63vw;
+        height: 0.63vw;
+        left: 0.16vw;
+    }
+    .category label[for="all"]::after, .orientation label[for="all"]::after {
+        width: 0.78vw;
+        height: 0.78vw;
+        border: 0.05vw solid #c1c1c1;
+    }
+    .dispay div button {
+        margin-right: 0.52vw;
+    }
+    .dispay div button img {
+        width: 1.56vw;
+    }
+    .date select {
+        font-size: 0.73vw;
+        border: 0.10vw solid #c1c1c1;
+        padding: 0.52vw;
+        border-radius: 0.26vw;
+    }
+    .orientation div:nth-child(3) label:before {
+        height: 0.42vw;
+    }
+    .orientation div:nth-child(4) label:before {
+        width: 0.42vw;
+        left: 0.26vw;
+    }
+    .colors div button {
+        width: 1.15vw;
+        height: 1.15vw;
+        margin: 0 0.47vw 0.42vw 0;
+    }
+    .colors div button:nth-child(1) {
+        border: 0.05vw solid #c0c0c0;
+    }
+    .colors div button:nth-child(1)::before {
+        font-size: 0.94vw;
+    }
+    .colors div button:nth-child(12) {
+        border: 0.05vw solid #c0c0c0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .filters {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    .filters>div {
+        padding: 3vw 2vw 3vw 3.13vw;
+        border-bottom: .5vw solid #e9e9e9;
+    }
+    .filters h5 {
+        font-size: 5vw;
+        margin-bottom: 3vw;
+    }
+    .filters h5 img {
+        width: 5vw;
+        margin-right: 1.52vw;
+    }
+    .category label[for="all"], .orientation label[for="all"] {
+        font-size: 5vw;
+    }
+    .category label[for="all"]::before, .orientation label[for="all"]::before {
+        width: 2.5vw;
+        height: 2.5vw;
+        left: .8vw;
+    }
+    .category label[for="all"]::after, .orientation label[for="all"]::after {
+        width: 4vw;
+        height: 4vw;
+        border: 0.05vw solid #c1c1c1;
+    }
+    .category div, .orientation div {
+        margin-bottom: 1vw;
+    }
+    .category label, .orientation label, .price label {
+        font-size: 5vw;
+        padding-left: 7vw;
+    }
+    .category label:not([for="all"])::before, .orientation label:not([for="all"])::before, .price label::before {
+        width: 3vw;
+        height: 3vw;
+        left: .65vw;
+    }
+    .category label:not([for="all"])::after, .orientation label:not([for="all"])::after, .price label::after {
+        width: 4vw;
+        height: 4vw;
+    }
+    .dispay div button {
+        margin-right: 3vw;
+    }
+    .dispay div button img {
+        width: 6vw;
+    }
+    .date select {
+        font-size: 6vw;
+        border: 0.1vw solid #c1c1c1;
+        padding: 1.6vw;
+        border-radius: 1vw;
+    }
+    .orientation div:nth-child(3) label::before {
+        height: 2vw;
+    }
+    .orientation div:nth-child(4) label::before {
+        width: 2vw;
+        left: 1.1vw;
+    }
+    .colors div button {
+        width: 7vw;
+        height: 7vw;
+        margin: 0 2vw 2vw 0;
+    }
+    .colors div button:nth-child(1)::before {
+        font-size: 7vw;
+    }
+    .filters >div:last-child h5 img{
+        width: 3vw;
+    }
+}

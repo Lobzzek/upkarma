@@ -1,0 +1,193 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #7015ff;
+    width: 100vw;
+}
+
+.footer .top_cnt {
+    padding: 25px 0;
+    width: 1200px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer .top_cnt nav {
+    display: flex;
+    margin-bottom: 80px;
+}
+
+.footer .top_cnt nav div {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    margin-right: 100px;
+}
+
+.footer .top_cnt nav h5 {
+    font-weight: 600;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.footer .top_cnt nav a {
+    font-size: 18px;
+    margin: 7px 0;
+}
+
+.footer .top_cnt .download_app {
+    font-size: 24px;
+    font-family: "OpenSans-sb";
+    color: white;
+    border: 3px solid white;
+    border-radius: 100px;
+    padding: 15px 30px;
+    margin-bottom: 25px;
+    width: fit-content;
+}
+
+.footer .socials_logo {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer .socials_logo div {
+    display: flex;
+    align-items: center;
+}
+
+.footer .socials_logo a {
+    margin-right: 20px;
+}
+
+.footer .socials_logo a img {
+    height: 45px;
+}
+
+.footer .socials_logo a:nth-child(2) img {
+    height: 35px;
+}
+
+.footer .socials_logo>img {
+    width: 166px;
+    filter: brightness(0%) invert(100%);
+}
+
+.footer .bottom_cnt {
+    width: 100%;
+    padding: 25px 0;
+    border-top: 3px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer .bottom_cnt p {
+    font-size: 18px;
+    color: white;
+}
+
+@media screen and (max-width: 1920px) {
+    .footer .top_cnt {
+        padding: 1.30vw 0;
+        width: 62.50vw;
+    }
+    .footer .top_cnt nav {
+        margin-bottom: 4.17vw;
+    }
+    .footer .top_cnt nav div {
+        margin-right: 5.21vw;
+    }
+    .footer .top_cnt nav h5 {
+        font-size: 1.25vw;
+        margin-bottom: 0.52vw;
+    }
+    .footer .top_cnt nav a {
+        font-size: 0.94vw;
+        margin: 0.36vw 0;
+    }
+    .footer .top_cnt .download_app {
+        font-size: 1.25vw;
+        border: 0.16vw solid white;
+        border-radius: 5.21vw;
+        padding: 0.78vw 1.56vw;
+        margin-bottom: 1.30vw;
+    }
+    .footer .socials_logo a {
+        margin-right: 1.04vw;
+    }
+    .footer .socials_logo a img {
+        height: 2.34vw;
+    }
+    .footer .socials_logo a:nth-child(2) img {
+        height: 1.82vw;
+    }
+    .footer .socials_logo>img {
+        width: 8.65vw;
+    }
+    .footer .bottom_cnt {
+        padding: 1.30vw 0;
+        border-top: 0.16vw solid white;
+    }
+    .footer .bottom_cnt p {
+        font-size: 0.94vw;
+    }
+}
+
+@media screen and (max-width: 769px) {
+    .footer .top_cnt {
+        width: 92vw;
+        padding: 5vw 0;
+    }
+    .footer .top_cnt nav {
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .footer .top_cnt nav>div {
+        margin-right: 0;
+        margin-bottom: 10vw;
+    }
+    .footer .top_cnt nav h5 {
+        font-size: 6vw;
+    }
+    .footer .top_cnt nav a {
+        font-size: 5vw;
+    }
+    .footer .top_cnt .download_app {
+        font-size: 6vw;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        border: .5vw solid white;
+        margin: 0 auto 10vw auto;
+        padding: 3vw 0;
+        border-radius: 100px;
+    }
+    .footer .socials_logo a {
+        margin-right: 3vw;
+    }
+    .footer .socials_logo a img {
+        height: 10vw;
+    }
+    .footer .socials_logo a:nth-child(2) {
+        margin-right: 2.5vw;
+    }
+    .footer .socials_logo a:nth-child(2) img {
+        height: 8vw;
+    }
+    .footer .socials_logo > img{
+        width: 30vw;
+    }
+    .footer .bottom_cnt{
+        padding: 3vw 0;
+        border-top: .5vw solid white;
+    }
+    .footer .bottom_cnt p{
+        font-size: 4vw;
+    }
+}
